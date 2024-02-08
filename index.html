@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="table-div">
+      <table>
+        <tbody id="tableBody">
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+          </tr>
+        </tbody>
+      </table>
+      <button id="modalAdd">Add</button>
+    </div>
+    <div class="modal hidden">
+      <form id="modalForm">
+        <input type="number" name="id" id="id" placeholder="type your ID" />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="type your email"
+        />
+        <input
+          type="text"
+          name="first-name"
+          id="firstName"
+          placeholder="type your first name"
+        />
+        <input
+          type="text"
+          name="last-name"
+          id="lastName"
+          placeholder="type your last name"
+        />
+        <button id="add">Add</button>
+      </form>
+      <button id="close">Close</button>
+      <p id="text"></p>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
